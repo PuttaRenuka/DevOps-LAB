@@ -1,0 +1,71 @@
+<DOCTYPE! html>
+<html>
+<body>
+     <title>Student Event Registration</title>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ACE ENGINEERING COLLEGE</title>
+</head>
+<body>
+    <p>An Autonomous Institution</p>
+    <h1><b>EVENT REGISTRATION FORM</b></h1>
+    <form>
+        <label>Name:</label>
+        <input type="text" id="name" name="name">  <br> <br>
+        <label>Email:</label>
+        <input type="email" id="email" name="email">
+        <br> <br>
+        <label>Password:</label>
+        <input type="password" id="password" name="password">
+        <br> <br>
+        <label>Confirm Password:</label>
+        <input type="password" id=" confirm Password " name=" confirm Password ">
+        <br> <br>
+        <label>Department:</label>
+        <select name="department" id="department">
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>MECH</option>
+            <option>CIVIL</option>
+        </select>
+        <br><br>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+        <label>Language:</label>
+        <select name="language" id="language">
+            <option>Select Language</option>
+            <option>JAVA</option>
+            <option>C</option>
+            <option>Python</option>
+            <option>C++</option>
+            <option>DBMS</option>
+        </select>
+        <br><br>
+        <label>About:</label>
+        <br>
+        <text area id="message" name="message" rows="5" cols="30"></text area>
+        <br><br>
+        <button type="submit">Register</button>
+    </form>
+<script> function validateForm() {
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var event = document.getElementById("event").value;
+
+            if (username == "" || email == "" || phone == "" || event == "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+            if(!email.includes("@")) {
+                alert("Please enter a valid email address");
+                return false;
+</body>
+</html>
